@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Installation - TheiaMath</title>
+
+    <meta name="description" content="Learn how to install and use TheiaMath in your Java projects.">
+
+    <link rel="icon" href="../assets/logos/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logos/logo-main.png"
+                     alt="TheiaMath Logo"
+                     height="60">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../docs.html">Documentation</a></li>
+            <li><a href="../download.html">Downloads</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h1>Installation</h1>
+
+        <p>
+            This guide explains how to install TheiaMath and add it
+            to your Java projects.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Requirements</h2>
+
+        <ul>
+            <li>Java 8 or later</li>
+            <li>A Java compiler (javac)</li>
+            <li>TheiaMath JAR file</li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Download</h2>
+
+        <p>
+            Download the latest release from the Downloads page.
+        </p>
+
+        <a href="../download.html">
+            Open Downloads
+        </a>
+
+    </section>
+
+    <section>
+
+        <h2>Add the JAR to Your Project</h2>
+
+        <p>
+            Place the TheiaMath JAR file inside your project's
+            library directory.
+        </p>
+
+<pre>
+project/
+│
+├── lib/
+│   └── TheiaMath-v1.0.0.jar
+│
+└── src/
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Compile</h2>
+
+        <p>
+            Compile your project using the JAR in the classpath.
+        </p>
+
+<pre>
+javac -cp lib/TheiaMath-v1.0.0.jar Main.java
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Run</h2>
+
+        <p>
+            Run the application with TheiaMath included
+            in the classpath.
+        </p>
+
+<pre>
+java -cp .:lib/TheiaMath-v1.0.0.jar Main
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>First Program</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double result = Arithmetic.Add(5, 3);
+
+        System.out.println(result);
+
+    }
+
+}
+</pre>
+
+        <p>
+            Expected output:
+        </p>
+
+<pre>
+8.0
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Next Steps</h2>
+
+        <ul>
+
+            <li>
+                <a href="getting-started.html">
+                    Getting Started
+                </a>
+            </li>
+
+            <li>
+                <a href="arithmetic.html">
+                    Arithmetic Documentation
+                </a>
+            </li>
+
+            <li>
+                <a href="examples.html">
+                    Examples
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 TheiaMath Project
+    </p>
+
+    <p>
+        Installation Guide
+    </p>
+
+</footer>
+
+</body>
+</html>
