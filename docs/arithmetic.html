@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arithmetic - TheiaMath</title>
+
+    <meta name="description" content="Documentation for the Arithmetic module of TheiaMath.">
+
+    <link rel="icon" href="../assets/logos/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logos/logo-main.png"
+                     alt="TheiaMath Logo"
+                     height="60">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../docs.html">Documentation</a></li>
+            <li><a href="../download.html">Downloads</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h1>Arithmetic Module</h1>
+
+        <p>
+            The Arithmetic module provides fundamental mathematical
+            operations used throughout TheiaMath.
+        </p>
+
+        <p>
+            It includes addition, subtraction, multiplication,
+            division, modulo operations, and integer variants.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Importing the Module</h2>
+
+<pre>
+import theia.math.Arithmetic;
+</pre>
+
+        <p>
+            Import the Arithmetic class before using its methods.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Addition</h2>
+
+<pre>
+double result = Arithmetic.Add(10, 5);
+
+System.out.println(result);
+</pre>
+
+<pre>
+15.0
+</pre>
+
+        <p>
+            Returns the sum of two numbers.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Subtraction</h2>
+
+<pre>
+double result = Arithmetic.Sub(10, 5);
+
+System.out.println(result);
+</pre>
+
+<pre>
+5.0
+</pre>
+
+        <p>
+            Returns the difference between two numbers.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Multiplication</h2>
+
+<pre>
+double result = Arithmetic.Mul(10, 5);
+
+System.out.println(result);
+</pre>
+
+<pre>
+50.0
+</pre>
+
+        <p>
+            Returns the product of two numbers.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Division</h2>
+
+<pre>
+double result = Arithmetic.Div(10, 5);
+
+System.out.println(result);
+</pre>
+
+<pre>
+2.0
+</pre>
+
+        <p>
+            Returns the quotient of two numbers.
+        </p>
+
+        <h3>Division by Zero</h3>
+
+<pre>
+Arithmetic.Div(10, 0);
+</pre>
+
+        <p>
+            Throws an ArithmeticException.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Modulo</h2>
+
+<pre>
+double result = Arithmetic.Mod(10, 3);
+
+System.out.println(result);
+</pre>
+
+<pre>
+1.0
+</pre>
+
+        <p>
+            Returns the remainder of a division.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Integer Division</h2>
+
+<pre>
+int result = Arithmetic.Idiv(10, 3);
+
+System.out.println(result);
+</pre>
+
+<pre>
+3
+</pre>
+
+        <p>
+            Performs division and returns an integer result.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Integer Modulo</h2>
+
+<pre>
+int result = Arithmetic.Imod(10, 3);
+
+System.out.println(result);
+</pre>
+
+<pre>
+1
+</pre>
+
+        <p>
+            Performs modulo and returns an integer result.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Method Reference</h2>
+
+        <table>
+
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>Add(a, b)</td>
+                <td>Adds two values.</td>
+            </tr>
+
+            <tr>
+                <td>Sub(a, b)</td>
+                <td>Subtracts two values.</td>
+            </tr>
+
+            <tr>
+                <td>Mul(a, b)</td>
+                <td>Multiplies two values.</td>
+            </tr>
+
+            <tr>
+                <td>Div(a, b)</td>
+                <td>Divides two values.</td>
+            </tr>
+
+            <tr>
+                <td>Mod(a, b)</td>
+                <td>Returns the remainder.</td>
+            </tr>
+
+            <tr>
+                <td>Idiv(a, b)</td>
+                <td>Integer division.</td>
+            </tr>
+
+            <tr>
+                <td>Imod(a, b)</td>
+                <td>Integer remainder.</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <section>
+
+        <h2>Example Program</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println(
+            Arithmetic.Add(5, 3)
+        );
+
+        System.out.println(
+            Arithmetic.Sub(5, 3)
+        );
+
+        System.out.println(
+            Arithmetic.Mul(5, 3)
+        );
+
+        System.out.println(
+            Arithmetic.Div(5, 3)
+        );
+
+    }
+
+}
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>See Also</h2>
+
+        <ul>
+
+            <li>
+                <a href="examples.html">
+                    Examples
+                </a>
+            </li>
+
+            <li>
+                <a href="precision.html">
+                    Precision
+                </a>
+            </li>
+
+            <li>
+                <a href="getting-started.html">
+                    Getting Started
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 TheiaMath Project
+    </p>
+
+    <p>
+        Arithmetic Documentation
+    </p>
+
+</footer>
+
+</body>
+</html>
