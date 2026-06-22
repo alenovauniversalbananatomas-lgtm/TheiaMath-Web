@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TheiaMath</title>
+
+    <meta name="description" content="TheiaMath is a lightweight and high-precision mathematics library for Java, providing arithmetic, algebra, geometry, constants, and advanced mathematical functionality.">
+
+    <link rel="icon" href="assets/logos/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logos/logo-main.png" alt="TheiaMath Logo" height="60">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+                <li><a href="download.html">Downloads</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="https://github.com/alenovauniversalbananatomas-lgtm/TheiaMath">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="assets/logos/logo-hero.png"
+                alt="TheiaMath Hero Logo"
+                width="250">
+
+            <h1>TheiaMath</h1>
+
+            <p>
+                A lightweight and high-precision mathematics library for Java.
+            </p>
+
+            <p>
+                Designed to provide arithmetic, algebra, geometry,
+                mathematical constants, and future advanced mathematical
+                functionality through a clean and intuitive API.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="download.html">Download</a>
+                <a href="docs.html">Get Started</a>
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>About TheiaMath</h2>
+
+            <p>
+                TheiaMath is an open-source Java mathematics library focused on
+                simplicity, precision, and developer experience.
+            </p>
+
+            <p>
+                The project aims to provide a modern mathematical toolkit that
+                can be used in educational, scientific, engineering, and
+                general-purpose software projects.
+            </p>
+
+            <p>
+                From basic arithmetic operations to future advanced algebraic
+                systems, TheiaMath seeks to become a complete mathematical
+                platform while remaining easy to learn and integrate.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Features</h2>
+
+            <ul>
+
+                <li>Arithmetic operations</li>
+
+                <li>Algebra utilities</li>
+
+                <li>Geometry tools</li>
+
+                <li>Mathematical constants</li>
+
+                <li>JavaDoc documentation</li>
+
+                <li>High precision support</li>
+
+                <li>Experimental BigDecimal integration</li>
+
+                <li>Open source development</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Documentation</h2>
+
+            <p>
+                TheiaMath includes comprehensive documentation designed for both
+                beginners and experienced developers.
+            </p>
+
+            <ul>
+
+                <li>
+                    <a href="docs/installation.html">
+                        Installation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/getting-started.html">
+                        Getting Started
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/arithmetic.html">
+                        Arithmetic
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/algebra.html">
+                        Algebra
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/geometry.html">
+                        Geometry
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/constants.html">
+                        Constants
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/examples.html">
+                        Examples
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/precision.html">
+                        Precision
+                    </a>
+                </li>
+
+                <li>
+                    <a href="docs/newbies.html">
+                        Newbies Guide
+                    </a>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h2>Example</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+double result = Arithmetic.Add(5, 3);
+
+System.out.println(result);
+</pre>
+
+            <p>
+                TheiaMath was designed with readability and simplicity in mind.
+                Most operations can be performed through straightforward static
+                methods.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Project Goals</h2>
+
+            <p>
+                The long-term vision of TheiaMath is to become a complete
+                mathematical ecosystem for Java developers.
+            </p>
+
+            <p>
+                Future plans may include advanced algebra systems,
+                statistics, matrices, symbolic computation, numerical
+                methods, complex numbers, and visualization tools.
+            </p>
+
+            <p>
+                The project continues to evolve through experimentation,
+                documentation improvements, and new mathematical modules.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Downloads</h2>
+
+            <p>
+                Download the latest release of TheiaMath and start building
+                mathematical applications immediately.
+            </p>
+
+            <a href="downloads/TheiaMath-v1.0.0.jar">
+                Download TheiaMath
+            </a>
+
+        </section>
+
+        <section>
+
+            <h2>Open Source</h2>
+
+            <p>
+                TheiaMath is developed openly on GitHub.
+            </p>
+
+            <p>
+                Contributions, bug reports, feature requests, and suggestions
+                are welcome.
+            </p>
+
+            <p>
+                Community feedback helps shape the future of the library and
+                improve its quality for all users.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 TheiaMath Project
+        </p>
+
+        <p>
+            Developed by Ale
+        </p>
+
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
