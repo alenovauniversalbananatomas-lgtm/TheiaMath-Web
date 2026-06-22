@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Examples - TheiaMath</title>
+
+    <meta name="description" content="Examples and sample programs using TheiaMath.">
+
+    <link rel="icon" href="../assets/logos/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logos/logo-main.png"
+                     alt="TheiaMath Logo"
+                     height="60">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../docs.html">Documentation</a></li>
+            <li><a href="../download.html">Downloads</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h1>Examples</h1>
+
+        <p>
+            This page contains practical examples showing how to
+            use TheiaMath in Java applications.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Basic Arithmetic</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println(
+            Arithmetic.Add(5, 3)
+        );
+
+    }
+
+}
+</pre>
+
+<pre>
+8.0
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Calculator Example</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double a = 12;
+        double b = 4;
+
+        System.out.println(
+            "Add: " +
+            Arithmetic.Add(a, b)
+        );
+
+        System.out.println(
+            "Sub: " +
+            Arithmetic.Sub(a, b)
+        );
+
+        System.out.println(
+            "Mul: " +
+            Arithmetic.Mul(a, b)
+        );
+
+        System.out.println(
+            "Div: " +
+            Arithmetic.Div(a, b)
+        );
+
+    }
+
+}
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Working with Variables</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double width = 15;
+        double height = 8;
+
+        double area =
+            Arithmetic.Mul(
+                width,
+                height
+            );
+
+        System.out.println(area);
+
+    }
+
+}
+</pre>
+
+<pre>
+120.0
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Average of Three Numbers</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double a = 10;
+        double b = 20;
+        double c = 30;
+
+        double sum =
+            Arithmetic.Add(
+                Arithmetic.Add(a, b),
+                c
+            );
+
+        double average =
+            Arithmetic.Div(sum, 3);
+
+        System.out.println(average);
+
+    }
+
+}
+</pre>
+
+<pre>
+20.0
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Modulo Example</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int remainder =
+            Arithmetic.Imod(
+                17,
+                5
+            );
+
+        System.out.println(remainder);
+
+    }
+
+}
+</pre>
+
+<pre>
+2
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Integer Division</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int result =
+            Arithmetic.Idiv(
+                10,
+                3
+            );
+
+        System.out.println(result);
+
+    }
+
+}
+</pre>
+
+<pre>
+3
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Error Handling</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            double result =
+                Arithmetic.Div(
+                    10,
+                    0
+                );
+
+            System.out.println(result);
+
+        } catch (ArithmeticException ex) {
+
+            System.out.println(
+                ex.getMessage()
+            );
+
+        }
+
+    }
+
+}
+</pre>
+
+<pre>
+Division by zero
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Mini Grade Calculator</h2>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double exam1 = 8;
+        double exam2 = 9;
+        double exam3 = 7;
+
+        double total =
+            Arithmetic.Add(
+                Arithmetic.Add(
+                    exam1,
+                    exam2
+                ),
+                exam3
+            );
+
+        double average =
+            Arithmetic.Div(
+                total,
+                3
+            );
+
+        System.out.println(
+            "Average: " +
+            average
+        );
+
+    }
+
+}
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Learning More</h2>
+
+        <p>
+            Additional examples will be added as new modules
+            become available in future releases.
+        </p>
+
+        <ul>
+
+            <li>
+                <a href="arithmetic.html">
+                    Arithmetic Documentation
+                </a>
+            </li>
+
+            <li>
+                <a href="getting-started.html">
+                    Getting Started
+                </a>
+            </li>
+
+            <li>
+                <a href="newbies.html">
+                    Newbies Guide
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 TheiaMath Project
+    </p>
+
+    <p>
+        Examples Documentation
+    </p>
+
+</footer>
+
+</body>
+</html>
