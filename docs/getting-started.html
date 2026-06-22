@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Getting Started - TheiaMath</title>
+
+    <meta name="description" content="Get started with TheiaMath and learn the basics of using the library in Java projects.">
+
+    <link rel="icon" href="../assets/logos/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/docs.css">
+</head>
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logos/logo-main.png"
+                     alt="TheiaMath Logo"
+                     height="60">
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../docs.html">Documentation</a></li>
+            <li><a href="../download.html">Downloads</a></li>
+            <li><a href="../about.html">About</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h1>Getting Started</h1>
+
+        <p>
+            Welcome to TheiaMath.
+        </p>
+
+        <p>
+            This guide will help you create your first project
+            and perform basic mathematical operations using the library.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Before You Begin</h2>
+
+        <p>
+            Make sure that:
+        </p>
+
+        <ul>
+
+            <li>Java 8 or later is installed.</li>
+
+            <li>TheiaMath has been downloaded.</li>
+
+            <li>The library has been added to your project.</li>
+
+        </ul>
+
+        <p>
+            If you have not completed these steps,
+            visit the Installation Guide first.
+        </p>
+
+        <a href="installation.html">
+            Open Installation Guide
+        </a>
+
+    </section>
+
+    <section>
+
+        <h2>Your First Program</h2>
+
+        <p>
+            Create a file named:
+        </p>
+
+<pre>
+Main.java
+</pre>
+
+        <p>
+            Then write the following code:
+        </p>
+
+<pre>
+import theia.math.Arithmetic;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double result = Arithmetic.Add(5, 3);
+
+        System.out.println(result);
+
+    }
+
+}
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Compile the Program</h2>
+
+<pre>
+javac -cp lib/TheiaMath.jar Main.java
+</pre>
+
+        <p>
+            This command compiles your Java source file
+            while including TheiaMath in the classpath.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Run the Program</h2>
+
+<pre>
+java -cp .:lib/TheiaMath.jar Main
+</pre>
+
+        <p>
+            Expected output:
+        </p>
+
+<pre>
+8.0
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Basic Operations</h2>
+
+        <h3>Addition</h3>
+
+<pre>
+Arithmetic.Add(10, 5);
+</pre>
+
+        <h3>Subtraction</h3>
+
+<pre>
+Arithmetic.Sub(10, 5);
+</pre>
+
+        <h3>Multiplication</h3>
+
+<pre>
+Arithmetic.Mul(10, 5);
+</pre>
+
+        <h3>Division</h3>
+
+<pre>
+Arithmetic.Div(10, 5);
+</pre>
+
+        <h3>Modulo</h3>
+
+<pre>
+Arithmetic.Mod(10, 3);
+</pre>
+
+    </section>
+
+    <section>
+
+        <h2>Working with Variables</h2>
+
+<pre>
+double a = 15;
+double b = 4;
+
+double result = Arithmetic.Div(a, b);
+
+System.out.println(result);
+</pre>
+
+        <p>
+            Using variables makes your programs more flexible
+            and easier to maintain.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Handling Errors</h2>
+
+        <p>
+            Division by zero is not allowed.
+        </p>
+
+<pre>
+Arithmetic.Div(10, 0);
+</pre>
+
+        <p>
+            The code above will throw an ArithmeticException.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Exploring the Library</h2>
+
+        <p>
+            TheiaMath contains multiple modules.
+        </p>
+
+        <ul>
+
+            <li>Arithmetic</li>
+
+            <li>Algebra</li>
+
+            <li>Geometry</li>
+
+            <li>Constants</li>
+
+        </ul>
+
+        <p>
+            Each module provides functionality for a specific
+            mathematical area.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Recommended Reading</h2>
+
+        <ul>
+
+            <li>
+                <a href="arithmetic.html">
+                    Arithmetic Documentation
+                </a>
+            </li>
+
+            <li>
+                <a href="algebra.html">
+                    Algebra Documentation
+                </a>
+            </li>
+
+            <li>
+                <a href="geometry.html">
+                    Geometry Documentation
+                </a>
+            </li>
+
+            <li>
+                <a href="examples.html">
+                    Examples
+                </a>
+            </li>
+
+            <li>
+                <a href="newbies.html">
+                    Newbies Guide
+                </a>
+            </li>
+
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Next Steps</h2>
+
+        <p>
+            Congratulations!
+        </p>
+
+        <p>
+            You have successfully created your first application
+            using TheiaMath.
+        </p>
+
+        <p>
+            Continue exploring the documentation to learn more
+            about the library and its capabilities.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 TheiaMath Project
+    </p>
+
+    <p>
+        Getting Started Guide
+    </p>
+
+</footer>
+
+</body>
+</html>
